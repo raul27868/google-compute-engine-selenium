@@ -66,7 +66,8 @@ sudo apt-get -f install -y --force-yes
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 # Install Chromedriver
-wget -N http://chromedriver.storage.googleapis.com/2.36/chromedriver_linux64.zip
+#wget -N http://chromedriver.storage.googleapis.com/2.36/chromedriver_linux64.zip
+wget -N https://chromedriver.storage.googleapis.com/2.44/chromedriver_linux64.zip
 unzip -o chromedriver_linux64.zip
 chmod +x chromedriver
 sudo rm -f /usr/local/share/chromedriver
@@ -96,6 +97,10 @@ sudo apt-get -f install -y --force-yes
 # Get pip
 sudo easy_install pip
 
+#Istall python modules
+sudo pip install pandas & sudo pip install bs4
+
+
 # get python dependency
 wget -O requirements.txt https://raw.githubusercontent.com/garywu/gae-selenium/master/requirements.txt
 sudo pip install -r requirements.txt
@@ -103,3 +108,5 @@ wget -O demo.py https://raw.githubusercontent.com/garywu/gae-selenium/master/dem
 chmod +x demo.py
 wget -O start_headless.sh https://raw.githubusercontent.com/garywu/gae-selenium/master/start_headless.sh
 chmod +x start_headless.sh
+
+
