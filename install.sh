@@ -103,3 +103,18 @@ wget -O demo.py https://raw.githubusercontent.com/garywu/gae-selenium/master/dem
 chmod +x demo.py
 wget -O start_headless.sh https://raw.githubusercontent.com/garywu/gae-selenium/master/start_headless.sh
 chmod +x start_headless.sh
+
+#Python modules
+sudo pip install pandas & sudo pip install bs4 & sudo pip install lxml
+
+#Python Web Server. Install
+mkdir my_python_website & cd my_python_website 
+
+#Web Server. Run
+python -m SimpleHTTPServer
+
+#Install apache2
+sudo apt-get update && sudo apt-get install apache2 -y
+
+#Firewall
+https://console.cloud.google.com/networking/firewalls
